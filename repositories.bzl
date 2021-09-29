@@ -58,7 +58,9 @@ def bazelisp_repositories():
         remote = "https://github.com/sbcl/sbcl.git",
         # May need to be adjusted to match the installed SBCL version.
         # tag = "sbcl-2.0.11",
-        commit = "58d68fe6b355fbca8a539a129b1b51e0340ccdec",
-        shallow_since = "1606649057 +0000",
+        # tag = "sbcl-2.1.7" - changed to local
+        # commit = "58d68fe6b355fbca8a539a129b1b51e0340ccdec",
+        commit = "f3618d28a3b2073588a4d36f6a0ed6a239f14a83",
+        # shallow_since = "1606649057 +0000",
         build_file = "//:BUILD.sbcl",
     )
