@@ -48,7 +48,7 @@ def bazelisp_repositories():
         native.new_local_repository,
         name = "local_sbcl",
         path = "/usr/",
-        build_file = "//:BUILD.local_sbcl",
+        build_file = "@bazelisp//:BUILD.local_sbcl",
     )
 
     # For tools-to-build/{corefile.lisp,editcore.lisp}.
@@ -62,5 +62,6 @@ def bazelisp_repositories():
         # commit = "58d68fe6b355fbca8a539a129b1b51e0340ccdec",
         commit = "f3618d28a3b2073588a4d36f6a0ed6a239f14a83",
         # shallow_since = "1606649057 +0000",
-        build_file = "//:BUILD.sbcl",
+        shallow_since = "1627634523 +0100",
+        build_file = "@bazelisp//:BUILD.sbcl",
     )
