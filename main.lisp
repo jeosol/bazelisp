@@ -917,7 +917,7 @@ it will signal an error."
   (%compile-sources (action-source-files action) (action-find-output-file action "fasl")
                   :emit-cfasl (action-emit-cfasl-p action)
                   :save-locations (action-record-path-location-p action)
-                  :block-compile t
+                  :block-compile nil
                   :entry-points (action-entry-points action)
                   :readtable (action-readtable action))
   (mapc #'(lambda (source-file)
